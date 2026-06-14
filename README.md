@@ -1,4 +1,5 @@
 # Đây là phần code được sử dụng trong phần cứng của hệ thống điều khiển đèn và quạt thông minh của nhóm 9
+```cpp
 /*
 ==================================================
 ĐỒ ÁN: ESP32-S3 + DHT11 + LCD + DS3231 + BLYNK + RADAR + GIỌNG NÓI (AI)
@@ -415,6 +416,7 @@ static int i2s_init(uint32_t sampling_rate) {
   i2s_driver_install((i2s_port_t)1, &i2s_config, 0, NULL);
   i2s_set_pin((i2s_port_t)1, &pin_config); i2s_zero_dma_buffer((i2s_port_t)1); return 0;
 }
+````
 -------------------------------------------------------------------------
 # Đây là phần điều khiển bằng giọng nói do AI xử lí thông qua mic INMP441
 # Voice Controlled Smart Lighting System
